@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto sans", sans-serif;
+}
+
+.animCross .line1 {
+  transform: rotate(-45deg) translateY(0.9rem);
+}
+
+.animCross .line2 {
+  opacity: 0;
+}
+
+.animCross .line3 {
+  transform: rotate(45deg) translateY(-0.9rem);
+}
+
+.testButton {
+  color: #eeeeee;
+  background-color: #0060b7;
+  border-radius: 2rem;
+  border: solid 2px #0060b7;
+}
+
+.navbar {
+  padding: 0rem;
+  text-align: center;
+  background-color: #424242;
+}
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eeeeee;
+  padding-top: 2.8vh;
+}
+.navbar > div {
+  max-height: 100%;
+}
+.navbar .wrapperBurger {
+  display: none;
+}
+.navbar .dropidown-menu {
+  display: none;
+  list-style: none;
+  text-align: left;
+}
+.navbar .dropidown-menu a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #eeeeee;
+  transition: color 300ms;
+}
+.navbar .dropidown-menu a:hover {
+  color: #ffa100;
+  text-decoration: none;
+}
+.navbar__item {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eeeeee;
+  transition: all 300ms;
+}
+.navbar__item:hover {
+  text-decoration: none;
+  color: #2196f3;
+  background-color: black;
+}
+.navbar .testButton {
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5vh 2rem;
+  transition: all 500ms;
+}
+.navbar .testButton:hover {
+  text-decoration: none;
+  color: #0060b7;
+  background-color: white;
+  border: solid 2px #0060b7;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar {
+    grid-template-rows: 8.5vh;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .navbar .wrapperLink {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .navbar .wrapperDropidown {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 12vh;
+  }
+  .navbar .dropidown-menu {
+    width: 100%;
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    grid-row: 2/3;
+    padding: 4rem 0 4rem 15rem;
+    background-color: #9fa8da;
+  }
+  .navbar__item {
+    max-height: 100%;
+    padding-top: 2.8vh;
+  }
+  .navbar .dropidown-button {
+    display: grid;
+  }
+  .navbar .testButton {
+    margin: 2vh 3rem 0 0;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
+  .navbar .wrapperLink {
+    grid-column: 2/3;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    grid-template-rows: 12vh;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .navbar .logo {
+    height: 100%;
+    grid-column: 1/4;
+  }
+  .navbar .wrapperBurger {
+    justify-self: center;
+    display: block;
+    padding: 1.4rem 0;
+  }
+  .navbar .wrapperBurger div {
+    background-color: black;
+    width: 2rem;
+    height: 0.15rem;
+    margin: 0.5rem;
+    transition: all 400ms ease;
+  }
+  .navbar .wrapperLink {
+    grid-column: 1/5;
+    display: grid;
+    background-color: rgba(159, 168, 218, 0.9);
+    height: 68vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20vh;
+  }
+  .navbar .wrapperDropidown {
+    height: 12vh;
+    grid-row: 1/3;
+    display: grid;
+    height: 100%;
+    align-items: center;
+  }
+  .navbar .dropidown-button {
+    height: 100%;
+  }
+  .navbar__item {
+    padding-top: 2.5rem;
+    height: 65%;
+    border-bottom: 2px solid #98b1d4;
+  }
+}
+section {
+  text-align: center;
+  padding-top: 30vh;
+}
+section h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+section h2 {
+  color: #424242;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar ">
+        <div class="logo">كلنا نحب ريم و كلنا نتفق⭐ </div>
+        <div class="wrapperBurger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="wrapperLink">
+          <div class="wrapperDropidown">
+            <div class="dropidown-button">
+              <a href="mbrook.html" class="navbar__item">رساله 💬</a>
+              <ul class="dropidown-menu">
+                <li><a href="#">رساله 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+                <li><a href="#">Service 4</a></li>
+              </ul>
+            </div>
+            <div class="dropidown-button">
+              <a href="mbrook2.html" class="navbar__item"> 💃💃</a>
+              <ul class="dropidown-menu">
+                <li><a href="#">غني لهم 1</a></li>
+                <li><a href="#">Projet 2</a></li>
+                <li><a href="#">Projet 3</a></li>
+                <li><a href="#">Projet 4</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="mbrook3.html" class="navbar__item">🍌🍓 </a>
+          <span><a href="boss.html" class="testButton">💋💋</a></span>
+        </div>
+      </nav>
+      <section>
+        <h1>هاااي ريم شخبارك
+           
+        </h1>
+        <h2>مبرووووك</h2>
+        احبك
+      </section>
+
+</body>
+</html>
